@@ -28,17 +28,25 @@
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
       overflow: hidden;
       transition: transform 0.2s ease;
+      display: flex;
+      flex-direction: column;
     }
     .product:hover {
       transform: translateY(-5px);
     }
     .product img {
       width: 100%;
-      height: 200px;
+      max-height: 200px;
+      min-height: 180px;
       object-fit: cover;
+      display: block;
     }
     .product-content {
       padding: 15px;
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
     }
     .product h2 {
       font-size: 16px;
@@ -48,7 +56,7 @@
     .product p {
       font-size: 14px;
       color: #666;
-      margin: 0 0 12px;
+      margin: 0 0 10px;
     }
     .product a {
       display: inline-block;
@@ -58,6 +66,7 @@
       border-radius: 6px;
       text-decoration: none;
       font-weight: bold;
+      text-align: center;
     }
     .product a:hover {
       background-color: #218838;
@@ -67,102 +76,21 @@
 <body>
   <h1>🔥 Горячие товары от BFINE Deals</h1>
   <div class="products">
+
+    <!-- Пример товара (повтори по нужным) -->
     <div class="product">
-     <a href="https://s.click.aliexpress.com/e/_okd9Fwl" target="_blank">
-    <img src="https://ae01.alicdn.com/kf/S7ae6a67eca08489a8b26b491f7311e90t.png" alt="Power Bank" />
-  </a>
-  <div class="product-content">
-    <h2>Essager Thin Wireless Power Bank</h2>
-    <p>Magnetic 20W 5000mAh Fast Charging for iPhone</p>
-    <a href="https://s.click.aliexpress.com/e/_oo0wAg3" target="_blank">Перейти к товару</a>
-      </div>
-    </div>
-    <div class="product">
-      <a href="https://s.click.aliexpress.com/e/_opLMYa1" target="_blank">
-    <img src="https://ae01.alicdn.com/kf/S824211c3bee04c3b8aee1270066f34d3H.jpg" alt="IP Camera" />
-  </a>
-  <div class="product-content">
-    <h2>BESDER 10MP IP Camera</h2>
-    <p>Wifi Dual Lens Auto Tracking Night Vision Camera</p>
-    <a href="https://s.click.aliexpress.com/e/_oCCII1N" target="_blank">Перейти к товару</a>
-      </div>
-    </div>
-    <div class="product">
-     <img src="https://ae01.alicdn.com/kf/Sfe4b3c4ddabb476a9d125096d93aff0ev.jpg" alt="Coffee Grinder" />
+      <a href="https://s.click.aliexpress.com/e/_okd9Fwl" target="_blank">
+        <img src="https://ae01.alicdn.com/kf/S7ae6a67eca08489a8b26b491f7311e90t.png" alt="Power Bank">
+      </a>
       <div class="product-content">
-        <h2>MHW-3BOMBER Coffee Grinder</h2>
-        <p>Manual Conical Burr Espresso Barista Tools</p>
-        <a href="https://s.click.aliexpress.com/e/_oDutNmx" target="_blank">Перейти к товару</a>
+        <h2>Essager Thin Wireless Power Bank</h2>
+        <p>Magnetic 20W 5000mAh Fast Charging for iPhone</p>
+        <a href="https://s.click.aliexpress.com/e/_oo0wAg3" target="_blank">Перейти к товару</a>
       </div>
     </div>
-    <div class="product">
-  <img src="https://ae01.alicdn.com/kf/S2b0b26206c6c4fbdbc9a37a2bd16f3bfF.jpg" alt="Xiaomi Mijia Z908 Pro /MAX 8K Drone" />
-  <div class="product-content">
-    <h2>Xiaomi Mijia Z908 Pro /MAX 8K Drone</h2>
-    <p>ESC Professional 4K Drone with Optical Flow Localization, 3-sided Obstacle Avoidance</p>
-    <a href="https://s.click.aliexpress.com/e/_opBGEl3" target="_blank">Перейти к товару</a>
-  </div>
-</div>
- <div class="products">
-  <div class="product">
-    <a href="https://s.click.aliexpress.com/e/_oB3ZvFi" target="_blank">
-      <img src="https://ae01.alicdn.com/kf/Sc8b28681cb864cce8cacc80495514066t.jpg" alt="Electric Pencil Sharpener" />
-    </a>
-    <div class="product-content">
-      <h2>✏️ Electric Pencil Sharpener</h2>
-      <p>Perfect for students and artists! ⚡ Sharpens in seconds, durable steel blade, and automatic shutoff. 5,000+ sold!</p>
-      <p><strong>Price:</strong> C$9.78 (-51%)</p>
-      <a href="https://s.click.aliexpress.com/e/_oB3ZvFi" target="_blank">Перейти к товару</a>
-    </div>
-  </div>
 
-  <div class="product">
-    <a href="https://s.click.aliexpress.com/e/_oDW0Z2s" target="_blank">
-      <img src="https://ae01.alicdn.com/kf/S5ed29c7b6ac248b6a346639c0f2ca496w.jpg" alt="Matte Top Coat for Gel Polish" />
-    </a>
-    <div class="product-content">
-      <h2>💅 Matte Top Coat for Gel Polish</h2>
-      <p>Create a stunning matte manicure 💖 No sticky layer, long-lasting finish, and stylish results! Hurry, 37% discount!</p>
-      <p><strong>Price:</strong> C$2.64 (-37%)</p>
-      <a href="https://s.click.aliexpress.com/e/_oDW0Z2s" target="_blank">Перейти к товару</a>
-    </div>
-  </div>
+    <!-- Вставляй остальные товары в ту же сетку -->
 
-  <div class="product">
-    <a href="https://s.click.aliexpress.com/e/_oEFakFm" target="_blank">
-      <img src="https://ae01.alicdn.com/kf/Sde58b3a4dee54f2baadedd681e29c6f5E.jpg" alt="Door Draft Stopper" />
-    </a>
-    <div class="product-content">
-      <h2>🚪 Door Draft Stopper</h2>
-      <p>Forget about drafts and noise! 🔥 Double-sided silicone protection against cold and dust. Over 4,000 orders!</p>
-      <p><strong>Price:</strong> C$6.09 (-49%)</p>
-      <a href="https://s.click.aliexpress.com/e/_oEFakFm" target="_blank">Перейти к товару</a>
-    </div>
-  </div>
-
-  <div class="product">
-    <a href="https://s.click.aliexpress.com/e/_ok1A0VS" target="_blank">
-      <img src="https://ae01.alicdn.com/kf/Sbc57a63482f84117a6488cc82e4d9c98h.jpg" alt="Baseus 4-in-1 USB Cable" />
-    </a>
-    <div class="product-content">
-      <h2>⚡ Baseus 4-in-1 USB Cable</h2>
-      <p>One cable for all your devices! 🔌 Compatible with Type-C, iPhone, Micro USB. Durable and reliable – over 900+ sold!</p>
-      <p><strong>Price:</strong> C$8.99 (-64%)</p>
-      <a href="https://s.click.aliexpress.com/e/_ok1A0VS" target="_blank">Перейти к товару</a>
-    </div>
-  </div>
-
-  <div class="product">
-    <a href="https://s.click.aliexpress.com/e/_oo14hTE" target="_blank">
-      <img src="https://ae01.alicdn.com/kf/Scc427cb87111445299a87ecba4cc1079o.jpg" alt="KAK Digital Peephole Camera" />
-    </a>
-    <div class="product-content">
-      <h2>🔍 KAK Digital Peephole Camera</h2>
-      <p>Know who’s at your door! 📷 3.5-inch LCD, HD video, 120° wide-angle, night vision. Highly rated – 5.0 stars!</p>
-      <p><strong>Price:</strong> C$58.84 (-42%)</p>
-      <a href="https://s.click.aliexpress.com/e/_oo14hTE" target="_blank">Перейти к товару</a>
-    </div>
-  </div> 
   </div>
 </body>
 </html>
